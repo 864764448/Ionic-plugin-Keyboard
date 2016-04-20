@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint src.podspec' to ensure this is a
+#  Be sure to run `pod spec lint ionic-plugin-keyboard.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "src"
-  s.version      = "0.0.1"
-  s.summary      = "A cordova plugin of keyboard."
+  s.name         = "ionic-plugin-keyboard"
+  s.version      = "0.0.2"
+  s.summary      = "A cordova plugin of ionic-plugin-keyboard."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-    The cordova.plugins.Keyboard object provides functions to make interacting with the keyboard easier, and fires events to indicate that the keyboard will hide/show.
+                 The cordova.plugins.Keyboard object provides functions to make interacting with the keyboard easier, and fires events to indicate that the keyboard will hide/show.
                    DESC
 
   s.homepage     = "https://github.com/864764448/ionic-plugin-keyboard"
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "Apache License 2.0"
+  s.license      = "Apache License"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-   s.platform     = :ios
+    s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/864764448/ionic-plugin-keyboard.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/864764448/ionic-plugin-keyboard.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  =  "src/ios/*.{h,m}"
+  s.source_files  = "src/ios/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "UIKit"
+    s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -130,9 +130,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.requires_arc = true
+    s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   s.dependency "Cordova-Lib", "~> 3.9.1"
+    s.dependency "Cordova-Lib", "~> 3.9.1"
 
 end
